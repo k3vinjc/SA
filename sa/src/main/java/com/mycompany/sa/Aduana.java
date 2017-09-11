@@ -22,12 +22,30 @@ public class Aduana {
     @WebMethod(operationName = "calcular_Costo_Aduana")
     public String calcular_Costo_Aduana(@WebParam(name = "marca") String marca, @WebParam(name = "linea") String linea, @WebParam(name = "modelo") String modelo) {
         String Salida="";
+        if(!marca.equals("") && !linea.equals("") && !modelo.equals("")){
+            Salida = "{\n" +
+                       "\"costo_Aduana\" : 135.57 \n" +
+                      "}";
+        }else{
+            Salida = "{\n" +
+                       "\"costo_Aduana\" : -1 \n" +
+                      "}";
+        }
         return Salida;
     }
     
     @WebMethod(operationName = "guardar_Id_Transferencia")
     public String guardar_Id_Transferencia(@WebParam(name = "id_Transferencia") int id_Transferencia, @WebParam(name = "monto_Compra") Double monto_Compra) {
         String Salida="";
+        if(id_Transferencia !=0 && monto_Compra != 0){
+            Salida = "{\n" +
+                        "\"respuesta\" : \"true\" \n" +
+                       "}";
+        }else{
+            Salida = "{\n" +
+                        "\"respuesta\" : \"false\" \n" +
+                       "}";
+        }
         return Salida;
     }
 }
