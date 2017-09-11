@@ -21,7 +21,9 @@ public class SAT {
      */
     @WebMethod(operationName = "calcular_Impuesto_Sat")
     public String calcular_Impuesto_Sat(@WebParam(name = "marca") String marca, @WebParam(name = "linea") String linea, @WebParam(name = "modelo") String modelo) {
-        String Salida="";
+        String Salida="{\n" +
+                        "\"valor\" : 400\n" +
+                        "}";
         return Salida;
     }
     @WebMethod(operationName = "registro_Id_Compra")
