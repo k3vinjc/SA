@@ -24,11 +24,11 @@ public class Aduana {
         String Salida="";
         if(!marca.equals("") && !linea.equals("") && !modelo.equals("")){
             Salida = "{\n" +
-                       "\"costo_Aduana\" : 135.57 \n" +
+                       "\"costo_Aduana\":135.57\n" +
                       "}";
         }else{
             Salida = "{\n" +
-                       "\"costo_Aduana\" : -1 \n" +
+                       "\"costo_Aduana\":-1\n" +
                       "}";
         }
         return Salida;
@@ -39,11 +39,11 @@ public class Aduana {
         String Salida="";
         if(id_Transferencia !=0 && monto_Compra != 0){
             Salida = "{\n" +
-                        "\"respuesta\" : \"true\" \n" +
+                        "\"respuesta\":\"true\"\n" +
                        "}";
         }else{
             Salida = "{\n" +
-                        "\"respuesta\" : \"false\" \n" +
+                        "\"respuesta\":\"false\"\n" +
                        "}";
         }
         return Salida;
