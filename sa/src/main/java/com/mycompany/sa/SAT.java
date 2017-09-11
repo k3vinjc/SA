@@ -25,7 +25,7 @@ public class SAT {
         return Salida;
     }
     @WebMethod(operationName = "registro_Id_Compra")
-    public String registro_Id_Compra(@WebParam(name = "marca") String marca, @WebParam(name = "linea") String linea, @WebParam(name = "modelo") String modelo) {
+    public String registro_Id_Compra(@WebParam(name = "id_Transferencia") int id_Transferencia, @WebParam(name = "monto_Compra") Double monto_Compra) {
         String Salida="";
         return Salida;
     }
