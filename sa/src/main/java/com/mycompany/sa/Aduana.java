@@ -26,7 +26,7 @@ public class Aduana {
     }
     
     @WebMethod(operationName = "guardar_Id_Transferencia")
-    public String guardar_Id_Transferencia(@WebParam(name = "id_Transferencia") String id_Transferencia, @WebParam(name = "monto_Compra") String monto_Compra) {
+    public String guardar_Id_Transferencia(@WebParam(name = "id_Transferencia") int id_Transferencia, @WebParam(name = "monto_Compra") Double monto_Compra) {
         String Salida="";
         return Salida;
     }
