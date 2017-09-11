@@ -57,7 +57,7 @@ public class Envios {
     @WebMethod(operationName = "calcular_Costo_Viaje")
     public String calcular_Costo_Viaje(@WebParam(name = "pais_Origen") String pais_Origen, @WebParam(name = "pais_Destino") String pais_Destino, @WebParam(name = "peso") Double peso) {
         String Salida="{\n" +
-                " \"costo_viaje\" : 600\n" +
+                "\"costo_viaje\":600\n" +
                 "}";
         return Salida;
     }
@@ -65,9 +65,9 @@ public class Envios {
     public String guardar_Transferencia(@WebParam(name = "id_Transferencia") int id_Transferencia, @WebParam(name = "monto") Double monto) {
         String Salida="";
         if(id_Transferencia != 0 && monto != 0){
-            Salida = "\"respuesta\" : \"true\"";
+            Salida = "\"respuesta\":\"true\"";
         }else{
-            Salida = "\"respuesta\" : \"false\"";
+            Salida = "\"respuesta\":\"false\"";
         }
         return Salida;
     }
