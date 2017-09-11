@@ -39,9 +39,4 @@ public class SAT {
         String Salida="";
         return Salida;
     }
-    @WebMethod(operationName = "calcular_Impuesto_Sat")
-    public String calcular_Impuesto_Sat(@WebParam(name = "tipo") String tipo, @WebParam(name = "marca") String marca, @WebParam(name = "linea") String linea, @WebParam(name = "centimetros") int centimetros, @WebParam(name = "cilindraje") int cilindraje, @WebParam(name = "puertas") int puertas, @WebParam(name = "asientos") int asientos, @WebParam(name = "modelo") String modelo) {
-        String Salida="";
-        return Salida;
-    }
 }
