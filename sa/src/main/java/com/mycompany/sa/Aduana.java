@@ -19,8 +19,15 @@ public class Aduana {
     /**
      * This is a sample web service operation
      */
-    @WebMethod(operationName = "hello")
-    public String hello(@WebParam(name = "name") String txt) {
-        return "Hello " + txt + " !";
+    @WebMethod(operationName = "calcular_Costo_Aduana")
+    public String calcular_Costo_Aduana(@WebParam(name = "marca") String marca, @WebParam(name = "linea") String linea, @WebParam(name = "modelo") String modelo) {
+        String Salida="";
+        return Salida;
+    }
+    
+    @WebMethod(operationName = "guardar_Id_Transferencia")
+    public String guardar_Id_Transferencia(@WebParam(name = "id_Transferencia") String id_Transferencia, @WebParam(name = "monto_Compra") String monto_Compra) {
+        String Salida="";
+        return Salida;
     }
 }

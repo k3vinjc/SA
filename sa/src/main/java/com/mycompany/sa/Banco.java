@@ -19,8 +19,9 @@ public class Banco {
     /**
      * This is a sample web service operation
      */
-    @WebMethod(operationName = "hello")
-    public String hello(@WebParam(name = "name") String txt) {
-        return "Hello " + txt + " !";
+    @WebMethod(operationName = "transferencia_Cuenta")
+    public String transferencia_Cuenta(@WebParam(name = "cuenta_Origen") String cuenta_Origen, @WebParam(name = "cuenta_Destino") String cuenta_Destino, @WebParam(name = "monto") double monto) {
+        String Salida="";
+        return Salida;
     }
 }
