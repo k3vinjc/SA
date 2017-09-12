@@ -23,6 +23,7 @@ public class Banco {
     public String transferencia_Cuenta(@WebParam(name = "cuenta_Origen") String cuenta_Origen, @WebParam(name = "cuenta_Destino") String cuenta_Destino, @WebParam(name = "monto") double monto) {
         String Salida="";
         int numero = (int) (Math.random() * 4) + 1;
+        numero =1;
         switch(numero){
             case 1:{
                 Salida="{\n" +
