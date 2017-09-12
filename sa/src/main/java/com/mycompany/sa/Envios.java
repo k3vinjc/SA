@@ -65,7 +65,9 @@ public class Envios {
     public String guardar_Transferencia(@WebParam(name = "id_Transferencia") int id_Transferencia, @WebParam(name = "monto") Double monto) {
         String Salida="";
         if(id_Transferencia != 0 && monto != 0){
-            Salida = "\"respuesta\":\"true\"";
+            Salida = "{\n" 
+                    +"\"respuesta\":\"true\"\n" +
+                    "}";
         }else{
             Salida = "\"respuesta\":\"false\"";
         }
