@@ -32,7 +32,7 @@ public class SAT {
         if(id_Transferencia != 0 && monto_Compra != 0){
             Salida ="{\n" +
                         "\"respuesta\" : \"true\" \n" +
-                    "}";;
+                    "}";
         }else{
             Salida = "{\n" +
                         "\"respuesta\" : \"false\" \n" +
@@ -58,7 +58,7 @@ public class SAT {
     @WebMethod(operationName = "guardar_Declaracion")
     public String guardar_Declaracion(@WebParam(name = "marca") String marca, @WebParam(name = "linea") String linea,@WebParam(name = "modelo") String modelo, @WebParam(name = "precio") Double precio, @WebParam(name = "fecha_declaracion") String fecha_declaracion) {
         String Salida="";
-        if(!marca.equals("") && !linea.equals("") && !modelo.equals("") && precio != 0 && fecha_declaracion.equals("")){
+        if(!marca.equals("") && !linea.equals("") && !modelo.equals("") && precio != 0 && !fecha_declaracion.equals("")){
             Salida ="{\n" +
                     "\"num_declaracion\" : 0123 \n" +
                     "}";
