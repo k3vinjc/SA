@@ -25,15 +25,7 @@ public class Aduana {
     @WebMethod(operationName = "calcular_Costo_Aduana")
     public String calcular_Costo_Aduana(@WebParam(name = "marca") String marca, @WebParam(name = "linea") String linea, @WebParam(name = "modelo") String modelo) {
         String Salida="TODO";
-        if(!marca.equals("") && !linea.equals("") && !modelo.equals("")){
-            Salida = "{\n" +
-                       "\"costo_Aduana\":135.57\n" +
-                      "}";
-        }else{
-            Salida = "{\n" +
-                       "\"costo_Aduana\":-1\n" +
-                      "}";
-        }
+        
         return Salida;
     }
     
